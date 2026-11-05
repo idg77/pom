@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+
+<body>
+    <!-- I created a wrapper than hold my header, main and footer-->
+    <div class="wrapper">
+
+        <!--Created a header for logo and navigation bar-->
+        <header class="navbar">
+            <h1 class="logo">Ingrid's Personal Operating Manual (POM)
+            </h1>
+            <nav>
+                <ul class="navlist">
+                    <li class="navl"><a href="#">Home</a></li>
+                    <li class="navl"><a href="#about">About Me</a></li>
+                    <li class="navl"><a href="#hours">Hours</a></li>
+                    <li class="navl"> <a href="#communication">Communication</a></li>
+                    <li class="navl"> <a href="#feedback">Feedback</a></li>
+                    <li class="navl"> <a href="#moreaboutme">Personal Details</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- I separated main content into a main element and added a div that wrapps all sections.-->
+        <main>
+            <div class="maincontent">
+                <h1 id="home">Ingrid D. Guerrero Rodriguez</h1>
+                <img class="myimage" src="images/IMG-7290.jpg" alt="Ingridpicture" />
+
+                <!-- Created a section for each of the h2 headers-->
+                <section id="about" class="Basicinfo">
+                    <!--Created cards for each section of the content going forward-->
+                    <div class="cardwrapper1">
+                        <h2> About Me</h2>
+                        <p class="introduction">I am a biomedical engineer currently expanding my technical skills
+                            thorugh a
+                            web development course. My background has strenghtened my analytical thinking,
+                            problem-solving,
+                            and research skills, which I aim to combine with programming and web desing to create
+                            practical,
+                            user-centered solutions. I value curiosity, learning, and collaboration, and I see web
+                            development as an opportunity to connect science and technology to solve real world problems
+                            and
+                            make meaningful impact.</p>
+                    </div>
+                </section>
+
+                <section class="Hours">
+                    <h2 id="hours">Working Hours & Best Time for Meetings</h2>
+                    <div class="cardwrapper">
+                        <div class="card card2">
+                            <h3>Working Hours</h3>
+                            <p>7 AM - 3 PM (Mon-Fri) (CT)</p>
+                        </div>
+                        <div class="card card3">
+                            <h3>Best Time for Meetings</h3>
+                            <p>8 AM - 1 PM (CT)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="communication">
+                    <h2 id="communication">Communication Preferences</h2>
+                    <div class="cardwrapper">
+                        <div class="card card4">
+                            <h3 class="heading3">Email</h3>
+                            <p>Preferred for detailed information, response within 24-48 hours.</p>
+                        </div>
+                        <div class="card card5">
+                            <h3>Slack</h3>
+                            <p>For quick questions, response within 6 hours.</p>
+                        </div>
+                        <div class="card card6">
+                            <h3>Video Calls</h3>
+                            <p>For real-time feedback, preferably scheduled.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="feedbackpreferences">
+                    <h2 id="feedback">Feedback Preferences</h2>
+                    <div class="cardwrapper">
+                        <div class="card card7">
+                            <h3>Receiving Feedback</h3>
+                            <p>Via email with specific examples.</p>
+                        </div>
+                        <div class="card card8">
+                            <h3>Giving Feedback</h3>
+                            <p>In 1:1 meetings, focusing on specific tasks.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="personal details">
+                    <h2 id="moreaboutme">Personal Details</h2>
+                    <div class="cardwrapper">
+                        <div class="card card9">
+                            <h3>Hobbies & Interests</h3>
+                            <ul class="hobbielist">
+                                <li>Gardening</li>
+                                <li>Ice skating</li>
+                                <li>Traveling</li>
+                                <li>FC Dallas games</li>
+                            </ul>
+                        </div>
+                        <div class="card card10">
+                            <h3>Caregiving Responsibilities</h3>
+                            <p>Primary caregiver with sisters for elderly parents</p>
+                        </div>
+                        <div class="card card11">
+                            <h3>Fun Fact About Me</h3>
+                            <p>I have been on a hot air balloon ride.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="workenvironment">
+                    <h2>Work Environment Preferences</h2>
+                    <div class="cardwrapper">
+                        <div class="card card12">
+                            <h3>Preferred Work Environment</h3>
+                            <p>Quiet space, Background noise/music.</p>
+                        </div>
+                        <div class="card card13">
+                            <h3>Sensory Preferences</h3>
+                            <p>Noise-canceling headphones, <a target="_blank"
+                                    href="https://www.wayfair.com/shop-product-type/pdp/inbox-zero-rustic-standing-desk-w122127425.html">standing
+                                    desk</a>, ergonomic chair.</p>
+                            <img class="chair" src="https://i.postimg.cc/QMB2ctvq/pexels-alphaen-31726674.jpg"
+                                alt="A desk standing desk with ergonomic chair" />
+                        </div>
+                        <div class="card card14">
+                            <h3>Accessibility Needs</h3>
+                            <p>Adjustable desk height.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="workpriorities">
+                    <h2>Work Priorities & Goals</h2>
+                    <div class="cardwrapper">
+                        <div class="card card15">
+                            <h3>Top Work Priorities</h3>
+                            <p>Backend development, system performance.</p>
+                        </div>
+                        <div class="card card16">
+                            <h3>Current Projects</h3>
+                            <p>Database optimization.</p>
+                        </div>
+                        <div class="card card17">
+                            <h3>Professional Goals</h3>
+                            <p>Becoming a lead developer.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="moreaboutme">
+                    <h2>More About Me</h2>
+                    <div class="cardwrapper">
+                        <div class="card card18">
+                            <h3>Favorite Quote</h3>
+                            <p class="quote">“The respect for the rights of others is peace.” BJ</p>
+                        </div>
+                        <div class="card card19">
+                            <h3>Work Style Emoji</h3>
+                            <p>🗂️</p>
+                        </div>
+                        <div class="card card20">
+                            <h3>Preferred Music/Playlist While Working</h3>
+                            <p><a target="_blank"
+                                    href="https://www.youtube.com/watch?v=NlVlvI85zR0&list=RDNlVlvI85zR0&start_radio=1">Spanish</a>
+                                guitar classic</p>
+                        </div>
+                        <div class="card card21">
+                            <h3>Specific Preferences</h3>
+                            <p>Clear, direct communication, written instructions, flexible deadlines, breaks for focus
+                                management.</p>
+                        </div>
+                        <div class="card card22">
+                            <h3>Triggers to Avoid</h3>
+                            <p>Loud noises, tight deadlines without notice.</p>
+                        </div>
+                        <div class="card card23">
+                            <h3>Preferred Role in Team Projects</h3>
+                            <p>Leader, Organizer, Contributor.</p>
+                        </div>
+                        <div class="card card24">
+                            <h3>Best Ways to Support You</h3>
+                            <p>Regular check-ins, clear task definitions.</p>
+                        </div>
+                        <div class="card card25">
+                            <h3>Preferred Collaboration Tools</h3>
+                            <p>Slack, Google Docs.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+        </main>
+
+        <!--Created a footer section-->
+        <footer class="site-footer">
+            <p>Back to<a href="#home"> home</a> page</p>
+        </footer>
+    </div>
+</body>
+
+</html>

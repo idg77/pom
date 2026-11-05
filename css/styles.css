@@ -1,0 +1,161 @@
+/* Imported google font */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Grechen+Fuemen&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pinyon+Script&display=swap");
+/* Added boiler code */
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 130px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Created variables for colors */
+:root {
+  --primary-white: #ffffff;
+  --navyblue: #486374;
+  --light-blue: #749fb9;
+}
+
+/* Added font to my body */
+body {
+  font-family: "Google Sans", sans-serif;
+  /*   font-family: Arial, Helvetica, sans-serif; */
+  margin: 0;
+}
+
+/* I am working to make the header sticky and stays in place, it works but when I click on the links hte anchor links take me further than the beggining of my section */
+ header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}  
+
+/* id{
+  scroll-margin-top; 1em;
+} */
+/* Styled the navbar */
+.navbar {
+  background-color: #486374;
+  border-bottom: 7px double #060a3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+/* Changed font and color in the heading in the navigation bar */
+.logo {
+  font-weight: 300px;
+  font-size: 20px;
+  color: #749fb9;
+}
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+/* Styled my main area content */
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e2ecfa;
+}
+
+.myimage {
+  border-radius: 5px;
+  width: 30%;
+  border: 2px solid #486374;
+}
+
+.introduction {
+  text-align: justify;
+}
+
+/* Added diferent blue tonality to my headers */
+h1,
+h2 {
+  color: #486374;
+}
+h3 {
+  color: #749fb9;
+}
+
+/* Hovered my links */
+a:hover {
+  color: #ff8db4;
+}
+/* Used flex to make cards functional across the sections */
+.cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  border: 2px solid #486374;
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 170px;
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0.3rem auto;
+  flex: 0 0 100%;
+}
+
+.hobbielist {
+  text-align: left;
+}
+/* Added different font size to my quote and resize font*/
+.quote {
+  font-family: "Pinyon Script", cursive;
+  font-size: 25px;
+}
+
+/* Adjusted size of the photo and added black border */
+.chair {
+  width: 60px;
+  height: auto;
+  border: 2px solid black;
+}
+
+/* Styled the footer */
+.site-footer {
+  text-align: center;
+  display: block;
+  background-color: #486374;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Functionalized my web for different screens */
+@media (min-width: 550px) {
+  .card {
+    flex: 0 0 calc((100% - 10rem) / 2);
+    background-color: #e0f2fe;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    flex: 0 0 calc((100% - 15rem) / 3);
+    background-color: #e0eaf0;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 550px){
+  html {
+  scroll-padding-top: 145px;
+}
+}
